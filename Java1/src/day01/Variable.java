@@ -7,7 +7,7 @@ public class Variable {
 //		주석이란, 컴퓨터가 코드를 번역할 때 무시하는 부분으로
 //		슬래시(/)를 두 번 적은 뒤쪽의 내용은
 //		코드를 실행할 때 무시한다.
-//		1. 코드에 대한 설명은 다른 개발자, 혹은 미래의 나에게
+//		1. 코드에 대한 설명 등 다른 개발자, 혹은 미래의 나에게
 //		설명할 때 사용된다.
 //		2. 실행하는 코드 중간에 임시로 실행을 막고자 할 때
 //		주석으로 바꾸어 실행하지 않도록 처리한다(주석처리)
@@ -27,6 +27,8 @@ public class Variable {
 		var = 10; // var라는 저장공간에 10이라는 값을 대입
 //		출력문
 //		print line
+//		syso 입력 후 ctrl + space bar를 누르면
+//		자동 완성으로 System.out.println이 나온다.
 //		System.out.println(출력하고 싶은 값);
 		System.out.println(var);
 		
@@ -35,12 +37,19 @@ public class Variable {
 //		1-1. 정수형: 소수점이 없는 숫자
 //			int: 정수형 대표
 //		short, int, long
+//			long: 정수형 중 큰 값을 나타낼 때 사용하는 데이터 타입
+//			정수 숫자값 뒤에 L을 붙여서 long타입임을 나타낸다.
+		long varLong = 30L;
 //		1-2. 실수형: 소수점이 있는 숫자
 //			float: 작은 실수를 나타낼 때 사용된다.
 //				1.0f, 3.14f
 //			double: 실수형 대표로 실수값을 작성했을 때
 //				double로 처리된다.
 //				3.14 0.11110
+		float fVar = 0.1f;
+		double dVar = fVar;
+		System.out.println(fVar);
+		System.out.println(dVar);
 		
 //		2. 문자형(character)
 //			char: 하나의 문자를 작은따옴표''에 감싸서 표현한다.
